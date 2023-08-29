@@ -2,6 +2,7 @@
 #define _BINARY_TREES_H_
 
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -71,5 +72,16 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void bt_push(binary_tree_t *node, levelorder_queue_t *head,
 		levelorder_queue_t **tail);
 int binary_tree_is_complete(const binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+int is_valid_bst_recursive(const binary_tree_t *tree, int low, int high);
+int binary_tree_is_bst(const binary_tree_t *tree);
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
+bst_t *bst_inorder_successor(bst_t *root);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+bst_t *bst_remove(bst_t *root, int value);
 
 #endif /* _BINARY_TREES_H_ */
