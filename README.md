@@ -1,2 +1,3 @@
 # C Binary trees
-In this project, I learnt a new concept in C programming language: **Binary Trees**. The concepts here included types of Binary Trees, Operations involved in Binary trees, including tree traversal, deletion, insertion and the respective code implementation of each of them.
+In this project, I learnt a new concept in C programming language Data Structures and Algorithms: **Binary Trees**. The concepts here included types of Binary Trees, Operations involved in Binary trees, including binary Search, tree traversal, deletion, insertion and the respective code implementation of each of them.
+I also learnt the various Big O notations of the time complexities of the operations of BSTs, AVL trees and Binary Heaps. 
