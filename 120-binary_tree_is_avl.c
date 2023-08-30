@@ -7,21 +7,27 @@
  */
 size_t avl_height(const binary_tree_t *tree)
 {
+if (tree)
+{
 size_t l = 0, r = 0;
-if (tree == NULL)
-return (0);
 
 if (tree->left)
 l = 1 + avl_height(tree->left);
+else
 l = 1;
 
 if (tree->right)
 r = 1 + avl_height(tree->right);
+else
 r = 1;
 
 if (l > r)
 return (l);
+else
 return (r);
+}
+else
+return (0);
 }
 /**
  * is_avl_recursive - Function name.
@@ -39,18 +45,21 @@ if (tree != NULL)
 {
 if (tree->n < low || tree->n > high)
 return (0);
+
 l = avl_height(tree->left);
 r = avl_height(tree->right);
-
 if (l > r)
 margin = l - r;
+else
 margin = r - l;
 
 if (margin > 1)
 return (0);
+else
 return (is_avl_recursive(tree->left, low, tree->n - 1) &&
-is_avl_recursive(tree->right, tree->n + 1, high));
+	is_avl_recursive(tree->right, tree->n + 1, high));
 }
+else
 return (1);
 }
 /**
