@@ -57,12 +57,12 @@ unsigned char bt_node_is_leaf(const binary_tree_t *node);
 size_t bt_node_depth(const binary_tree_t *tree);
 const binary_tree_t *bt_get_leaf(const binary_tree_t *tree);
 int bt_is_perfect_recursive(const binary_tree_t *tree,
-		size_t leaf_depth, size_t level);
+	size_t leaf_depth, size_t level);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
-		const binary_tree_t *second);
+	const binary_tree_t *second);
 levelorder_queue_t *bt_create_node(binary_tree_t *node);
 void bt_free_queue(levelorder_queue_t *head);
 void bt_pint_push(binary_tree_t *node, levelorder_queue_t *head,
@@ -70,7 +70,7 @@ void bt_pint_push(binary_tree_t *node, levelorder_queue_t *head,
 void bt_pop(levelorder_queue_t **head);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void bt_push(binary_tree_t *node, levelorder_queue_t *head,
-		levelorder_queue_t **tail);
+	levelorder_queue_t **tail);
 int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
