@@ -1,5 +1,5 @@
-# C Binary trees
-In this project, I learnt a new concept in C programming language Data Structures and Algorithms: **Binary Trees**. 
+# C Binary Trees
+In this project, I learnt a new concept in the C Programming Language Data Structures and Algorithms: **Binary Trees**. 
 
 The concepts here included:
 
@@ -15,7 +15,7 @@ The concepts here included:
   - Insertion
   - Left and Right Rotation
   - Conversion of array to binary trees
-- **Code implementation of each of the bynary tree types and their operations**
+- **Code implementation of each of the binary tree types and their operations**
 
 I also learnt the various Big O notations of the time complexities of the operations of BSTs, AVL trees and Binary Heaps.
 
