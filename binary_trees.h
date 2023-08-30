@@ -97,5 +97,9 @@ avl_t *avl_remove(avl_t *root, int value);
 avl_t *sorted_array_to_avl_recursive(int *array, int first, int last,
 	avl_t *parent);
 avl_t *sorted_array_to_avl(int *array, size_t size);
+int bt_is_complete_recursive(const binary_tree_t *tree, int index, int value);
+int bt_is_complete(const binary_tree_t *tree);
+int bt_check_parent(const binary_tree_t *tree);
+int binary_tree_is_heap(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
