@@ -7,9 +7,9 @@
  */
 size_t avl_height(const binary_tree_t *tree)
 {
+size_t l = 0, r = 0;
 if (tree)
 {
-size_t l = 0, r = 0;
 
 if (tree->left)
 l = 1 + avl_height(tree->left);
